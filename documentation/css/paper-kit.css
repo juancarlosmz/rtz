@@ -4346,7 +4346,7 @@ textarea.form-control {
   }
 
   .presentation-title {
-    font-size: 5em;
+    font-size: 1em;
   }
 
   .presentation-subtitle {
@@ -5912,7 +5912,7 @@ textarea.form-control {
   max-width: 730px;
   margin: 0 auto;
   position: relative;
-  text-align: center;
+  text-align: left;
   color: #FFFFFF;
   display: block;
 }
@@ -5929,7 +5929,7 @@ textarea.form-control {
 }
 
 .presentation-title {
-  font-size: 8em;
+  font-size: 3em;
   font-weight: 700;
   margin: 0;
   color: #FFFFFF;
