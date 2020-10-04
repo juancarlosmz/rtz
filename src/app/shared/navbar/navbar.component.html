@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="#">RTZ Contratistas Generales</a>
+            <a class="navbar-brand" [routerLink]="['/home']">RTZ Contratistas Generales</a>
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
@@ -38,7 +38,7 @@
                 </li>
                --> 
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="#" class="nav-link"> NOSOTROS</a>
+                    <a [routerLink]="['/nosotros']" class="nav-link"> NOSOTROS</a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a href="#" class="nav-link"> SERVICIOS</a>
@@ -46,16 +46,22 @@
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a href="#" class="nav-link"> PRODUCTOS</a>
                 </li>
+
+                <!--
                 <li class="nav-item" *ngIf="isHome()">
                     <a href="#" class="btn btn-danger btn-round">Cóntactanos</a>
                 </li>
+                -->
+                <li class="nav-item">
+                    <a href="#" class="btn btn-danger btn-round">Cóntactanos</a>
+                </li>
+
+                <!-- 
                 <li class="nav-item" *ngIf="!isHome()">
                     <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
                     <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
                 </li>
-                <li class="nav-item" *ngIf="isDocumentation()">
-                    <a href="https://github.com/creativetimofficial/paper-kit-2-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link">Have an issue</a>
-                </li>
+                -->
             </ul>
         </div>
     </div>
