@@ -1,20 +1,8 @@
 <div class="wrapper">
 
-
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-        </ol>
-        <!--/.Indicators-->
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-            <!--First slide-->
-            <div class="carousel-item active">
-
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+            <div class="wrapper">
                 <div class="page-header section-dark" style="background-image: url('assets/img/home/homebanner.png')" alt="First slide">
                     <div class="filter"></div>
                     <div class="content-center">
@@ -27,12 +15,15 @@
                     <h6 class=" category-absolute ml-auto mr-auto">
                     </h6>
                 </div>
-
             </div>
-            <!--/First slide-->
-            <!--Second slide-->
-            <div class="carousel-item">
-                <div class="page-header section-dark" style="background-image: url('assets/img/home/homebanner.png')" alt="Second slide">
+            <div class="carousel-caption">
+                <h3>First Slide</h3>
+                <p> Angular 10 Carousel Example </p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="wrapper">
+                <div class="page-header section-dark" style="background-image: url('assets/img/home/homebanner.png')" alt="First slide">
                     <div class="filter"></div>
                     <div class="content-center">
                         <div class="container">
@@ -45,10 +36,14 @@
                     </h6>
                 </div>
             </div>
-            <!--/Second slide-->
-            <!--Third slide-->
-            <div class="carousel-item">
-                <div class="page-header section-dark" style="background-image: url('assets/img/home/homebanner.png')" alt="Third slide">
+            <div class="carousel-caption">
+                <h3>Second Slide</h3>
+                <p> Check out Techiediaries</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="wrapper">
+                <div class="page-header section-dark" style="background-image: url('assets/img/home/homebanner.png')" alt="First slide">
                     <div class="filter"></div>
                     <div class="content-center">
                         <div class="container">
@@ -61,21 +56,12 @@
                     </h6>
                 </div>
             </div>
-            <!--/Third slide-->
-        </div>
-        <!--/.Slides-->
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <!--/.Controls-->
-    </div>
-    <!--/.Carousel Wrapper-->
+            <div class="carousel-caption">
+                <h3>Third Slide</h3>
+                <p>for full tutorial...</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
 
     <div class="section">
         <div class="container">
