@@ -692,3 +692,11 @@ body {
         float: none;
     }
 }
+.amoi h2{
+    font-size: 2em !important;
+    color: blue;
+    
+}
+.amoi:visited { color: #551a8b; }
+.amoi:hover { color: #06e; }
+.amoi:focus { outline: thin dotted; }
