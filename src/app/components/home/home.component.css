@@ -375,7 +375,7 @@ body {
 }
 
 .slider_card {
-    width: 480px;
+    width: 800px;
     background: #ffffff;
     box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
     border-radius: 12px;
@@ -392,7 +392,7 @@ body {
 }
 
 .slider_text {
-    padding: 52px 64px;
+    padding: 52px 6px;
     text-align: left;
 }
 
@@ -527,8 +527,7 @@ body {
 .arrow ul {
     margin: 0;
     padding: 0;
-    margin-top: 24px;
-    margin-bottom: 80px;
+    margin-top: -25%;
 }
 
 .slick-next:focus,
@@ -572,15 +571,30 @@ body {
 
 .slick-next:hover,
 .slick-prev:hover {
-    opacity: 1;
+    opacity: 0;
 }
 
 .slick-prev {
-    opacity: 0.3;
+    opacity: 0;
 }
 
 .slick-next {
-    opacity: 0.3;
+    opacity: 0;
+}
+
+.slick-next2:hover,
+.slick-prev2:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slick-prev2 {
+    opacity: 0.7;
+}
+
+.slick-next2 {
+    opacity: 0.7;
+    margin-right: 60px;
 }
 
 [dir="rtl"] .slick-prev {
@@ -692,11 +706,114 @@ body {
         float: none;
     }
 }
-.amoi h2{
-    font-size: 2em !important;
-    color: blue;
-    
+
+.amoi h2 {
+    font-size: 2.001em !important;
+    color: black;
 }
-.amoi:visited { color: #551a8b; }
-.amoi:hover { color: #06e; }
-.amoi:focus { outline: thin dotted; }
+
+.amoi h2 label {
+    font-size: 2.005em !important;
+    line-height: 35pt;
+    color: blue;
+}
+
+.amoi:visited {
+    color: #551a8b;
+}
+
+.amoi:hover {
+    color: #06e;
+}
+
+.amoi:focus {
+    outline: thin dotted;
+}
+
+.contenedorespecial {
+    border-radius: 5px;
+    border: solid 1px #e0e0e0;
+    height: 380px;
+    top: 10%;
+    margin-left: 20%;
+    padding-left: 40%;
+    right: 0%;
+    left: -55%;
+    position: absolute;
+    z-index: 20;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.contenedorespecial2 {
+    border-radius: 5px;
+    border: solid 1px #e0e0e0;
+    top: 30%;
+    margin-left: 15%;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    right: 0%;
+    left: -35%;
+    position: absolute;
+    z-index: 20;
+    background-color: white;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.contenedorespecial2 h2 {
+    font-size: 2.001em !important;
+    color: black;
+}
+
+.contenedorespecial2 h2 label {
+    font-size: 2.005em !important;
+    line-height: 35pt;
+    color: blue;
+}
+
+
+/*PARA LA VERSION MOVIL*/
+
+@media screen and (max-width: 470px) {
+    .slider_card {
+        width: 300px;
+    }
+    .arrow {
+        margin-top: 0%;
+    }
+    .contenedorespecial {
+        border-radius: 0px;
+        border: solid 0px #e0e0e0;
+        height: auto;
+        top: 0%;
+        margin-left: 0%;
+        padding-left: 0%;
+        right: 0%;
+        left: 0%;
+        position: relative;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        z-index: 20;
+    }
+    .contenedorespecial2 {
+        border-radius: 0px;
+        border: solid 0px #e0e0e0;
+        height: auto;
+        top: 0%;
+        margin-left: 0%;
+        padding-left: 0%;
+        right: 0%;
+        left: 0%;
+        position: relative;
+        z-index: 20;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .prev.slick-arrow svg {
+        margin-left: -40%;
+    }
+    .next.slick-arrow svg {
+        margin-right: 0px;
+    }
+}
