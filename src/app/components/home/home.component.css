@@ -775,6 +775,49 @@ body {
 
 /*PARA LA VERSION MOVIL*/
 
+@media screen and (max-width: 768px) {
+    .slider_card {
+        width: 300px;
+    }
+    .arrow {
+        margin-top: 0%;
+    }
+    .contenedorespecial {
+        border-radius: 0px;
+        border: solid 0px #e0e0e0;
+        height: auto;
+        top: 0%;
+        margin-left: 0%;
+        padding-left: 0%;
+        right: 0%;
+        left: 0%;
+        position: relative;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        z-index: 20;
+    }
+    .contenedorespecial2 {
+        border-radius: 0px;
+        border: solid 0px #e0e0e0;
+        height: auto;
+        top: 0%;
+        margin-left: 0%;
+        padding-left: 0%;
+        right: 0%;
+        left: 0%;
+        position: relative;
+        z-index: 20;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .prev.slick-arrow svg {
+        margin-left: -40%;
+    }
+    .next.slick-arrow svg {
+        margin-right: 0px;
+    }
+}
+
 @media screen and (max-width: 470px) {
     .slider_card {
         width: 300px;
