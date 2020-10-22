@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" [routerLink]="['/home']">
+            <a class="navbar-brand" href="#/home" >
                 <img style="height: auto !important;" src="assets/img/logo.png" width="200" alt="RTZ Contratistas Generales">
 
             </a>
@@ -44,10 +44,10 @@
                     <a [routerLink]="['/nosotros']" class="nav-link"> NOSOTROS</a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="#" class="nav-link"> SERVICIOS</a>
+                    <a [routerLink]="['/servicios']" class="nav-link"> SERVICIOS</a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="#" class="nav-link"> PRODUCTOS</a>
+                    <a [routerLink]="['/proyectos']" class="nav-link"> PROYECTOS</a>
                 </li>
 
                 <!--
