@@ -11,6 +11,12 @@ export class ProyectoComponent implements OnInit {
   titulo: any;
   imagen: any;
   descripcion: any;
+  serviciotitulo: any;
+  direccion: any;
+  partida: any;
+  servicioimagen: any;
+  cliente: any;
+  periodo: any;
 
 
   constructor(
@@ -28,9 +34,12 @@ export class ProyectoComponent implements OnInit {
         this.titulo = proyecto['result'][0].titulo;
         this.imagen = proyecto['result'][0].imagen;
         this.descripcion = proyecto['result'][0].descripcion;
-        console.log(this.titulo);
-        console.log(this.imagen);
-        console.log(this.descripcion);
+        this.serviciotitulo = proyecto['result'][0].serviciotitulo;
+        this.direccion = proyecto['result'][0].direccion;
+        this.partida = proyecto['result'][0].partida;
+        this.servicioimagen = proyecto['result'][0].servicioimagen;
+        this.cliente = proyecto['result'][0].cliente;
+        this.periodo = proyecto['result'][0].periodo;
       },
       error => {
         console.log('error');

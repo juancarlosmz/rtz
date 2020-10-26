@@ -1,31 +1,76 @@
-<div class="section section-dark">
+<div class="page-header" data-parallax="true" style="background-image: url('{{servicioimagen}}');">
+    <div class="filter"></div>
     <div class="container">
-        <div class="row">
-
+        <div class="motto text-center">
+            <h1>{{serviciotitulo}} </h1>
+            <h3>{{titulo}} </h3>
+            <br />
         </div>
     </div>
 </div>
 
-<div class="main">
-    <div class="section text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mr-auto ml-auto">
-                    <h2 class="title">asdasd</h2>
-                    <h5 class="description">asdasd.</h5>
-                    <br>
 
+<div class="section section-light text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-profile card-plain">
+                    <div class="card-block">
+                        <div class="author">
+                            <h4 class="card-title">Ubicación</h4>
+                            <h6 class="card-category">{{direccion}}</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br/><br/>
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>{{titulo}}</h2>
-                    <p>{{descripcion}}</p>
+
+            <div class="col-md-4">
+                <div class="card card-profile card-plain">
+                    <div class="card-block">
+                        <div class="author">
+                            <h4 class="card-title">Periódo</h4>
+                            <h6 class="card-category">{{periodo}}</h6>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="{{imagen}}" />
+            </div>
+            <div class="col-md-4">
+                <div class="card card-profile card-plain">
+                    <div class="card-block">
+                        <div class="author">
+                            <h4 class="card-title">Servicio</h4>
+                            <h6 class="card-category">{{serviciotitulo}}</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+
+<div class="main">
+    <div class="section text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info">
+                        
+                        <div class="description ">
+                            <div class="description" [innerHTML]="descripcion">  </div>
+                            <p class="description">Cliente: {{cliente}} </p>
+                            <p class="description">Dirección: {{direccion}} </p>
+                            <p class="description">Tipo de Servicio: {{partida}} </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info"> 
+                        <img src="{{imagen}}" style="width: 100%;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>       
+

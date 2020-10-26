@@ -20,13 +20,14 @@
             <br/><br/>
             <div class="row">
                 <ng-container *ngFor="let proyecto of allProyectos; let i=index">
-                    <div class="col-md-6">
+                    <div class="col-md-6 ">
                         <div class="banner">
                             <div class="capa-color"></div>
                             <div class="capa-imagen"><img src="{{proyecto.imagen}}" /></div>
-                            <div class="capa-texto">
+                            <div class="capa-texto draco" [routerLink]="['/proyecto/',proyecto.titulo]">
                                 <div>
-                                    <h3>{{proyecto.titulo}}</h3>
+                                    <h3 style="font-weight: bold;">{{proyecto.titulo}}</h3>
+                                    <p>{{proyecto.periodo}} </p>
                                 </div>
                             </div>
                         </div>
