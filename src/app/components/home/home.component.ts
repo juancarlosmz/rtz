@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
   name = 'Angular ' + VERSION.major;
   images = [700, 800, 807].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
+  allProyectos: any;
+
   constructor(
     config: NgbCarouselConfig,
     private RtzInyected: RtzservicesService
@@ -31,12 +33,24 @@ export class HomeComponent implements OnInit {
       localStorage.removeItem('foo') 
     }
     this.rtzServicios();
+    this.rtzProyectos();
   }
 
   rtzServicios() {
     this.RtzInyected.leerServicio().subscribe(
       (servicios) => {
-        console.log(servicios);
+        //console.log(servicios);
+      },
+      error => {
+        console.log('error');
+      }
+    );
+  }
+  rtzProyectos() {
+    this.RtzInyected.leerProyecto().subscribe(
+      (proyectos) => {
+        this.allProyectos = proyectos['result'];
+        //console.log(proyectos);
       },
       error => {
         console.log('error');

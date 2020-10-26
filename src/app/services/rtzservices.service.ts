@@ -6,12 +6,18 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RtzservicesService {
-  ruta: string = 'http://127.0.0.1:8000/';
+  ruta: string = 'https://www.rtzsac.com/backend/public/';
 
   constructor(private http: HttpClient) { }
 
   leerServicio(): Observable<any> {
     return this.http.get<any>(this.ruta + 'servicio');
+  }
+  leerProyecto(): Observable<any> {
+    return this.http.get<any>(this.ruta + 'proyecto');
+  }
+  leerUnProyecto(titulo: string): Observable<any>{
+    return this.http.get<any>(this.ruta + '/unproyecto/' + titulo);
   }
 
 }

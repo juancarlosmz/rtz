@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="#/home" >
+            <a class="navbar-brand" href="#/home">
                 <img style="height: auto !important;" src="assets/img/logo.png" width="200" alt="RTZ Contratistas Generales">
 
             </a>
@@ -46,8 +46,19 @@
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a [routerLink]="['/servicios']" class="nav-link"> SERVICIOS</a>
                 </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a [routerLink]="['/proyectos']" class="nav-link"> PROYECTOS</a>
+
+                <li class="nav-item ">
+                    <div ngbDropdown class="d-inline-block dropdown">
+                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><label [routerLink]="['/proyectos']">PROYECTOS</label></a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                            <ng-container *ngFor="let proyecto of allProyectos; let i=index">
+                                <ng-container *ngIf="i+1 < 5">
+                                    <a href="#/proyecto/{{proyecto.titulo}}" class="dropdown-item">{{proyecto.titulo}}</a>
+                                </ng-container>
+                            </ng-container>
+                            <a [routerLink]="['/proyectos']" class="dropdown-item">Ver más proyectos</a>
+                        </div>
+                    </div>
                 </li>
 
                 <!--

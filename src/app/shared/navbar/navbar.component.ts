@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { RtzservicesService } from 'app/services/rtzservices.service';
 
 @Component({
     selector: 'app-navbar',
@@ -9,15 +10,31 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 export class NavbarComponent implements OnInit {
     private toggleButton: any;
     private sidebarVisible: boolean;
-
-    constructor(public location: Location, private element : ElementRef) {
+    allProyectos: any;
+    constructor(
+        public location: Location, 
+        private element : ElementRef,
+        private RtzInyected: RtzservicesService
+    ) {
         this.sidebarVisible = false;
     }
 
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+        this.rtzProyectos();
     }
+    rtzProyectos() {
+        this.RtzInyected.leerProyecto().subscribe(
+          (proyectos) => {
+            this.allProyectos = proyectos['result'];
+            //console.log(proyectos);
+          },
+          error => {
+            console.log('error');
+          }
+        );
+      }
     sidebarOpen() {
         const toggleButton = this.toggleButton;
         const html = document.getElementsByTagName('html')[0];

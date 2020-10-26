@@ -8,61 +8,30 @@
 
 <div class="main">
     <div class="section text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mr-auto ml-auto">
-                <h2 class="title">NUESTROS PROYECTOS</h2>
-                <h5 class="description">RTZ Contratistas Generales ha realizado gran número de proyectos de diferentes características y en distintos entornos, lo que nos ha dado una visión mas amplia del rubro de la construcción.</h5>
-                <br>
-  
-            </div>
-        </div>
-        <br/><br/>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="banner">
-                    <div class="capa-color"></div>
-                    <div class="capa-imagen"><img src="assets/img/faces/AMPLIACION DEL HOTEL ESTELAR.PNG" /></div>
-                    <div class="capa-texto">
-                        <div>
-                        <h3>Ampliación del Hotel Estelar</h3>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <h2 class="title">NUESTROS PROYECTOS</h2>
+                    <h5 class="description">RTZ Contratistas Generales ha realizado gran número de proyectos de diferentes características y en distintos entornos, lo que nos ha dado una visión mas amplia del rubro de la construcción.</h5>
+                    <br>
+
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="banner">
-                    <div class="capa-color"></div>
-                    <div class="capa-imagen"><img src="assets/img/faces/CONDOMINIO PASEO SAN MARTIN.PNG" /></div>
-                    <div class="capa-texto">
-                        <div>
-                        <h3>Condominio Paseo San Martin</h3>
+            <br/><br/>
+            <div class="row">
+                <ng-container *ngFor="let proyecto of allProyectos; let i=index">
+                    <div class="col-md-6">
+                        <div class="banner">
+                            <div class="capa-color"></div>
+                            <div class="capa-imagen"><img src="{{proyecto.imagen}}" /></div>
+                            <div class="capa-texto">
+                                <div>
+                                    <h3>{{proyecto.titulo}}</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="banner">
-                    <div class="capa-color"></div>
-                    <div class="capa-imagen"><img src="assets/img/faces/E28 ESPACIOS.PNG" /></div>
-                    <div class="capa-texto">
-                        <div>
-                        <h3>E28 Espacios</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="banner">
-                    <div class="capa-color"></div>
-                    <div class="capa-imagen"><img src="assets/img/faces/IAPECHICLAYO.PNG" /></div>
-                    <div class="capa-texto">
-                        <div>
-                        <h3>Ipae Chiclayo</h3>
-                        </div>
-                    </div>
-                </div>
+                </ng-container>
             </div>
         </div>
     </div>
-</div>

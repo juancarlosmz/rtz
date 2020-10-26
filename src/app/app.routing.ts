@@ -12,6 +12,7 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { HomeComponent } from './components/home/home.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes =[
     { path: 'nosotros',             component: NosotrosComponent },
     { path: 'servicios',            component: ServiciosComponent },
     { path: 'proyectos',             component: ProyectosComponent },
+    { path: 'proyecto/:titulo',             component: ProyectoComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },

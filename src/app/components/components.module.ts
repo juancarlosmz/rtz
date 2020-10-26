@@ -18,6 +18,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { HomeComponent } from './home/home.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
+import { ProyectoComponent } from './proyecto/proyecto.component';
 
 @NgModule({
     imports: [
@@ -40,7 +41,8 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
         NosotrosComponent,
         HomeComponent,
         ServiciosComponent,
-        ProyectosComponent
+        ProyectosComponent,
+        ProyectoComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

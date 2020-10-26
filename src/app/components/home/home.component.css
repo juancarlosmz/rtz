@@ -700,7 +700,6 @@ body {
     font-size: initial;
 }
 
-
 .amoi h2 {
     font-size: 26px !important;
     color: black;
@@ -710,12 +709,12 @@ body {
 .amoi h2 label {
     font-size: 36px !important;
     line-height: 35pt;
-    color: #551a8b;
+    color: #1e2353;
     font-family: 'Gotham-Black', sans-serif;
 }
 
 .amoi:visited {
-    color: #551a8b;
+    color: #1e2353;
 }
 
 .amoi:hover {
@@ -725,9 +724,6 @@ body {
 .amoi:focus {
     outline: thin dotted;
 }
-
-
-
 
 .contenedorespecial {
     border-radius: 5px;
@@ -771,13 +767,13 @@ body {
     color: #1e2353;
 }
 
-.claudia img{
-    -webkit-box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.15);
-    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.15);
+.claudia img {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-/*PARA LA VERSION MOVIL*/
 
+/*PARA LA VERSION MOVIL*/
 
 @media screen and (max-width: 991px) {
     .slider_card {
