@@ -60,7 +60,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
     &,
     a{
-        color: $card-black-color;
+        color: #006b7b;
         text-decoration: none;
     }
 }
@@ -68,7 +68,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     text-transform: uppercase;
 }
 .description{
-    color: $dark-gray;
+    color: #53565a;
+    font-family: 'Gotham-Book', sans-serif;
+    font-size: 16px;
+    line-height: 1.63;
 }
 blockquote small{
     font-style: normal;
@@ -126,8 +129,10 @@ blockquote small{
 }
 .title{
     margin-top: 30px;
-    margin-bottom: 25px;
+    font-size: 36px;
     min-height: 32px;
+    font-family: 'Gotham-Black', sans-serif;
+    
 }
 .title.text-center{
     margin-bottom: 50px;

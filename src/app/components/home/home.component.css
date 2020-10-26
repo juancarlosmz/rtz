@@ -377,7 +377,6 @@ body {
 .slider_card {
     width: 800px;
     background: #ffffff;
-    box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
     border-radius: 12px;
 }
 
@@ -399,14 +398,17 @@ body {
 .slider_text h2 {
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
-    margin-block-start: 0em;
+    font-size: 20px;
+    margin-block-start: 2em;
+    line-height: 1.5em;
+    color: black;
 }
 
 .slider_text p {
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
+    margin-block-start: 1em;
 }
 
 .slider_img {
@@ -698,24 +700,18 @@ body {
     font-size: initial;
 }
 
-@media screen and (max-width: 991px) {
-    .slider_card {
-        margin: 0 !important;
-    }
-    .arrow li {
-        float: none;
-    }
-}
 
 .amoi h2 {
-    font-size: 2.001em !important;
+    font-size: 26px !important;
     color: black;
+    font-family: 'Gotham-Medium', sans-serif;
 }
 
 .amoi h2 label {
-    font-size: 2.005em !important;
+    font-size: 36px !important;
     line-height: 35pt;
-    color: #1e2353;
+    color: #551a8b;
+    font-family: 'Gotham-Black', sans-serif;
 }
 
 .amoi:visited {
@@ -729,6 +725,9 @@ body {
 .amoi:focus {
     outline: thin dotted;
 }
+
+
+
 
 .contenedorespecial {
     border-radius: 5px;
@@ -772,15 +771,24 @@ body {
     color: #1e2353;
 }
 
+.claudia img{
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.15);
+}
 
 /*PARA LA VERSION MOVIL*/
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 991px) {
     .slider_card {
         width: 300px;
+        margin: 0 !important;
     }
     .arrow {
         margin-top: 0%;
+    }
+    .arrow li {
+        float: none;
     }
     .contenedorespecial {
         border-radius: 0px;
