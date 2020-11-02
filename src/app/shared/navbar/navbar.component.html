@@ -11,35 +11,8 @@
                 <span class="navbar-toggler-bar"></span>
             </button>
         </div>
-        <div class="navbar-collapse" id="navbarToggler">
+        <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="navbar-nav ml-auto">
-
-                <!-- 
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                        <p class="d-lg-none">Twitter</p>
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-                        <i class="fa fa-facebook-square"></i>
-                        <p class="d-lg-none">Facebook</p>
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-                        <i class="fa fa-instagram"></i>
-                        <p class="d-lg-none">Instagram</p>
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://www.github.com/CreativeTimOfficial/paper-kit-2-angular" target="_blank">
-                        <i class="fa fa-github"></i>
-                        <p class="d-lg-none">GitHub</p>
-                    </a>
-                </li>
-               -->
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a [routerLink]="['/nosotros']" class="nav-link"> NOSOTROS</a>
                 </li>
@@ -61,22 +34,11 @@
                     </div>
                 </li>
 
-                <!--
-                <li class="nav-item" *ngIf="isHome()">
-                    <a href="#" class="btn btn-danger btn-round">Cóntactanos</a>
-                </li>
-                -->
                 <li class="nav-item">
                     <a target="_blank" href="https://web.whatsapp.com/send?phone=51986669667&text=" class="btn btn-success btn-round">Cóntactanos</a>
 
                 </li>
 
-                <!-- 
-                <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
-                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
-                </li>
-                -->
             </ul>
         </div>
     </div>

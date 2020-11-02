@@ -814,6 +814,13 @@ body {
         margin-bottom: 5%;
         margin-top: 5%;
     }
+    .contenedorespecial2 h2 {
+        font-size: 1.001em !important;
+    }
+    
+    .contenedorespecial2 h2 label {
+        font-size: 1.005em !important;
+    }
     .prev.slick-arrow svg {
         margin-left: -40%;
     }
