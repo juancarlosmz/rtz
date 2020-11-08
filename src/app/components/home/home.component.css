@@ -772,6 +772,49 @@ body {
     box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
+.claudia .btn {
+    background-color: transparent;
+    color: #004f63;
+    border-color: #004f63;
+}
+
+.claudia .btn:hover {
+    background-color: #004f63;
+    color: white;
+}
+
+.contenedorespecial2 .btn {
+    background-color: #004f63;
+    color: white;
+    border-color: #004f63;
+}
+
+.contenedorespecial2 .btn:hover {
+    background-color: #01232b;
+    border-color: #01232b;
+}
+
+.arrow ul li {
+    background-color: #a9a9a973;
+    border: #6e6f75 solid 1px;
+}
+
+.prev.slick-arrow svg {
+    margin-left: 0px;
+}
+
+.next.slick-arrow svg {
+    margin-right: 0px;
+}
+
+.slick-prev.slick-arrow {
+    display: none;
+}
+
+.slick-next.slick-arrow {
+    display: none;
+}
+
 
 /*PARA LA VERSION MOVIL*/
 
@@ -817,21 +860,35 @@ body {
     .contenedorespecial2 h2 {
         font-size: 1.001em !important;
     }
-    
     .contenedorespecial2 h2 label {
         font-size: 1.005em !important;
     }
     .prev.slick-arrow svg {
-        margin-left: -40%;
+        margin-left: 0px;
     }
     .next.slick-arrow svg {
         margin-right: 0px;
+    }
+    .slick-prev.slick-arrow {
+        display: none;
+    }
+    .slick-next.slick-arrow {
+        display: none;
     }
 }
 
 @media screen and (max-width: 470px) {
     .slider_card {
         width: 300px;
+    }
+    .slider_text {
+        padding: 0px 6px;
+    }
+    .arrow {
+        margin-bottom: 0px;
+    }
+    .arrow ul {
+        margin-top: -130%;
     }
     .arrow {
         margin-top: 0%;
@@ -865,9 +922,15 @@ body {
         margin-top: 5%;
     }
     .prev.slick-arrow svg {
-        margin-left: -40%;
+        margin-left: 0px;
     }
     .next.slick-arrow svg {
         margin-right: 0px;
+    }
+    .slick-prev.slick-arrow {
+        display: none;
+    }
+    .slick-next.slick-arrow {
+        display: none;
     }
 }

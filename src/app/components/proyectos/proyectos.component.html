@@ -1,38 +1,41 @@
-<div class="section section-dark">
-    <div class="container">
-        <div class="row">
-
-        </div>
-    </div>
-</div>
-
-<div class="main">
-    <div class="section text-center">
+<div class="wrapper" style="width: 103%;">
+    <div class="section section-dark">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 mr-auto ml-auto">
-                    <h2 class="title">NUESTROS PROYECTOS</h2>
-                    <h5 class="description">RTZ Contratistas Generales ha realizado gran número de proyectos de diferentes características y en distintos entornos, lo que nos ha dado una visión mas amplia del rubro de la construcción.</h5>
-                    <br>
 
-                </div>
             </div>
-            <br/><br/>
-            <div class="row">
-                <ng-container *ngFor="let proyecto of allProyectos; let i=index">
-                    <div class="col-md-6 ">
-                        <div class="banner">
-                            <div class="capa-color"></div>
-                            <div class="capa-imagen"><img src="{{proyecto.imagen}}" /></div>
-                            <div class="capa-texto draco" [routerLink]="['/proyecto/',proyecto.titulo]">
-                                <div>
-                                    <h3 style="font-weight: bold;">{{proyecto.titulo}}</h3>
-                                    <p>{{proyecto.periodo}} </p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <h2 class="title">NUESTROS PROYECTOS</h2>
+                        <h5 class="description">RTZ Contratistas Generales ha realizado gran número de proyectos de diferentes características y en distintos entornos, lo que nos ha dado una visión mas amplia del rubro de la construcción.</h5>
+                        <br>
+
+                    </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                    <ng-container *ngFor="let proyecto of allProyectos; let i=index">
+                        <div class="col-md-6 ">
+                            <div class="banner">
+                                <div class="capa-color"></div>
+                                <div class="capa-imagen"><img src="{{proyecto.imagen}}" /></div>
+                                <div class="capa-texto draco" [routerLink]="['/proyecto/',proyecto.titulo]">
+                                    <div>
+                                        <h3 style="font-weight: bold; text-shadow: 1px 1px #040404;">{{proyecto.titulo}}</h3>
+                                        <p style="font-weight: bold;">{{proyecto.periodo}} </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </ng-container>
+                    </ng-container>
+                </div>
             </div>
         </div>
     </div>
+</div>

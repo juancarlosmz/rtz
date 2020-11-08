@@ -1,0 +1,21 @@
+/*PARA LA VERSION MOVIL*/
+
+.credits {
+    margin-right: auto !important;
+}
+
+.credits .description {
+    text-align: justify !important;
+}
+
+@media screen and (max-width: 388px) {
+    .credits {
+        width: 100%;
+        text-align: center;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .credits .description {
+        text-align: center !important;
+    }
+}
